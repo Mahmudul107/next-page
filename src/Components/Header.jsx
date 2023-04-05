@@ -24,7 +24,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-500' : 'default')}
             >
               Home
             </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/books'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-500' : 'default')}
             >
               Books
             </NavLink>
@@ -40,12 +40,13 @@ const Header = () => {
           <li>
             <NavLink
               to='/about'
-              className={({ isActive }) => (isActive ? 'active' : 'default')}
+              className={({ isActive }) => (isActive ? 'text-blue-500' : 'default')}
             >
               About us
             </NavLink>
           </li>
         </ul>
+        
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>
           {/* Dropdown Open Button */}
@@ -84,7 +85,7 @@ const Header = () => {
                 <nav>
                   <ul className='space-y-4'>
                     <li>
-                      <Link to='/' className='default'>
+                      <Link to='/' className='default hover:text-blue-400'>
                         Home
                       </Link>
                     </li>
